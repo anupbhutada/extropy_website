@@ -159,14 +159,15 @@
 {
 	console.log('hi');
 	var controller = new ScrollMagic.Controller();
+	var hor_cont = new ScrollMagic.Controller({vertical: false});
 
 	var shapeFloat = new ScrollMagic.Scene({
-		triggerElement: '.section_1',
-		duration: '50%'
+		triggerElement: '#ev1',
+		duration: '850%'
 	})
 	.setTween(TweenMax.to('.shape-1', 1, {bezier:{type:"cubic", values:points}, ease:Power0.easeNone}))
 	.addIndicators()
-	.addTo(controller);
+	.addTo(hor_cont);
 
 	var pinEvents = new ScrollMagic.Scene({
 		triggerElement: '.section_1_wrap',
