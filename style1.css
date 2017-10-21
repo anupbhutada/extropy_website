@@ -1,0 +1,145 @@
+html{
+margin:0;
+padding:0;
+}
+body{
+background: grey;
+margin: 0;
+padding: 0;
+height: 900vh;
+}
+header{
+display: flex;
+justify-content: space-between;
+position:relative;
+top: 0px;
+margin: 0px;
+padding: 0px;
+background: #F79F79;
+z-index: 3;
+}
+header div{
+display: flex;
+font-size: 1.2em;
+padding: 15px;
+margin: 0px;
+}
+header div div{
+padding: 5px 15px;
+margin: 0 15px;
+}
+header div div:hover{
+color: teal;
+background: black;
+}
+.button{
+background-color: none;
+border: 2px solid black;
+}
+
+#centre{
+font-size: 1.5em;
+}
+#left{
+display:flex;
+justify-content: flex-start;
+width: 450px;
+}
+#right{
+display:flex;
+justify-content: flex-end;
+width: 450px;
+}
+
+.section_2{
+display: flex;
+height: 100vh;
+justify-content: center;
+background: #DEF2F1;
+margin:0;
+padding:0;
+}
+.section_2 div{
+display:flex;
+}
+.section_2 p{
+font-size: 10em;
+padding:0;
+margin:0;
+align-self: center;
+}
+
+.section_1{
+display: flex;
+width: 800vw;
+}
+.section_1 main{
+width: 100vw;
+height: 100vh;
+}
+
+.section_1 .ev-card{
+width: 100vw;
+
+}
+.section_1 .ev-card{
+display: flex;
+height: 100vh;
+justify-content: center;
+background: #87B6A7;
+margin:0;
+padding:0;
+border-left: 10px dashed black;
+}
+.section_1 .ev-card div{
+font-size: 10em;
+padding:0;
+margin:0;
+align-self: center;
+}
+.section_1_wrap{
+overflow-x: hidden;
+-webkit-perspective: 1000;
+		        perspective: 1000;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+.float-cont{
+position: fixed;
+top: 0;
+left:0;
+z-index: 2;
+width: 100vw;
+height: 100vh;
+}
+.float-cont .shape-1{
+height: 100px;
+width: 100px;
+background: teal;
+position: absolute;
+top: 50%;
+left: 8%;
+}
+svg#Layer_1{
+padding: 0px;
+margin: 0px;
+z-index: -1;
+position: absolute;
+top: 0;
+}
+#anim-path{
+display:none;
+}

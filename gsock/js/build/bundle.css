@@ -1,0 +1,1033 @@
+/* old: #4f931b; */
+
+.docs-head-container {
+  height: auto;
+}
+
+.docs-head-container .breadcrumbs {
+  padding: 14px 0;
+}
+
+.docs-head-container .right {
+  float: right;
+}
+
+.docs-main-container .docs-main {
+  opacity: 1;
+  visibility: visible;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container {
+  position: relative;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item {
+  transition: 0.3s ease-in-out;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item p {
+  transition: 0.3s ease-in-out;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-class:hover,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-element:hover,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-folder:hover,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-page:hover {
+  background-color: #f8f8f8;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-class:hover:before,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-element:hover:before,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-folder:hover:before,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-page:hover:before {
+  width: 10px;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-class:hover p,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-element:hover p,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-folder:hover p,
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-page:hover p {
+  transform: translate3d(10px, 0, 0);
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-element:hover {
+  background-color: #3b3b3b;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-class:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background: #61AC27;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-folder:before {
+  background: none;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-header {
+  height: auto;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-header p {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.5em 30px;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .item-page:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .doc-element {
+  display: block;
+}
+
+.docs-main-container .docs-main .docs-nav .panels .side-container .side .nav-panels .inner-panel .doc-element a {
+  display: block;
+  text-decoration: none;
+}
+
+.docs-main-container .docs-main .docs-content h1 a,
+.docs-main-container .docs-main .docs-content h4 a {
+  color: #555;
+  text-decoration: none;
+}
+
+.docs-main-container .docs-main .docs-content .docs-feature {
+  display: flex;
+}
+
+.docs-main-container .docs-main .docs-content .docs-feature .left {
+  width: auto;
+  padding-right: 40px;
+}
+
+.docs-main-container .docs-main .docs-content .docs-feature .right {
+  width: auto;
+  padding-left: 40px;
+}
+
+.docs-main-container .docs-main .docs-content .class-intro-text {
+  height: auto;
+}
+
+.docs-main-container .docs-main .docs-content .show-more-line .show-more-intro {
+  display: none;
+}
+
+.docs-main-container .docs-main .docs-content .show-more-line .fade {
+  display: none;
+}
+
+.docs-main-container .docs-main .docs-content .element-table .elements > div.element:first-child {
+  border: none;
+}
+
+.docs-main-container .docs-main .docs-content .element-table .elements .config-object .config-object-props {
+  height: auto;
+}
+
+.docs-main-container .docs-main .docs-content .element-table .elements .config-object .show-more {
+  transition: background-color 0.3s;
+}
+
+.docs-main-container .docs-main .docs-content .element-table .elements .config-object .show-more:hover {
+  background-color: #777;
+}
+
+.docs-main-container .docs-main .docs-content .element-table .elements .show-more-container .fade {
+  transition: opacity 1s;
+}
+
+.docs-main-container .docs-main .docs-content .element-table .elements .show-more-container.opened .fade {
+  opacity: 0;
+}
+
+.docs-main-container .divider-line {
+  width: 98.79518%;
+  height: 2px;
+}
+
+.config-object,
+.config-object-shortcode {
+  padding-left: 1em !important;
+}
+
+.config-object .config-object-props,
+.config-object-shortcode .config-object-props {
+  padding: 0 0 0 1em;
+}
+
+.config-object .config-object-props .prop span p,
+.config-object-shortcode .config-object-props .prop span p {
+  display: inline;
+}
+
+.config-object .config-object-props .prop-with-more .short,
+.config-object-shortcode .config-object-props .prop-with-more .short {
+  display: inline;
+}
+
+.config-object .config-object-props .prop-with-more .long,
+.config-object-shortcode .config-object-props .prop-with-more .long {
+  display: none;
+}
+
+.config-object .config-object-props .prop-with-more .more-less,
+.config-object-shortcode .config-object-props .prop-with-more .more-less {
+  cursor: pointer;
+}
+
+.config-object .config-object-props .prop-with-more .more-less:before,
+.config-object-shortcode .config-object-props .prop-with-more .more-less:before {
+  content: '+';
+  display: inline-block;
+  cursor: pointer;
+  margin-left: -1em;
+  min-width: 1em;
+}
+
+.config-object .config-object-props .prop-with-more.open .short,
+.config-object-shortcode .config-object-props .prop-with-more.open .short {
+  display: none;
+}
+
+.config-object .config-object-props .prop-with-more.open .long,
+.config-object-shortcode .config-object-props .prop-with-more.open .long {
+  display: inline;
+}
+
+.config-object .config-object-props .prop-with-more.open .more-less:before,
+.config-object-shortcode .config-object-props .prop-with-more.open .more-less:before {
+  content: '\2013';
+}
+
+.panel-rotator {
+  position: relative;
+}
+
+.panel-rotator .panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.panel-shifter {
+  position: relative;
+}
+
+.panel-shifter .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.panel-rotator .panel {
+  min-height: 100%;
+}
+
+.panel-rotator .panel-shifter {
+  min-height: 100%;
+}
+
+x.docs-main-container .docs-main {
+  width: auto;
+  display: flex;
+}
+
+x.docs-main-container .docs-main > div {
+  margin: 0 20px;
+}
+
+x.docs-main-container .docs-main .docs-nav {
+  min-width: 300px;
+}
+
+x.docs-main-container .docs-main .docs-content {
+  width: auto;
+}
+
+.breadcrumbs.right {
+  float: right;
+}
+
+.docs-nav .panel-rotator .panel {
+  width: calc(100% - 2px);
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  background: #fff;
+}
+
+.docs-nav .panel-rotator:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: calc(100% - 2px);
+  height: 15px;
+  background: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.docs-nav .panel-shifter .slide {
+  width: 100%;
+  border-right: 1px solid #ccc;
+}
+
+.docs-nav .group-header {
+  display: block;
+  position: relative;
+  background: #fff;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.docs-nav .group-header p {
+  display: inline-block;
+  color: #777;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 20px 0 20px 3em;
+  transition: 0.3s ease-in-out;
+}
+
+.docs-nav .group-header.back:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: url("https://greensock.com/wp-content/themes/greensock/images/docs/back-arrow.jpg") no-repeat;
+  background-size: 34px 56px;
+  width: 34px;
+  height: 100%;
+  transform: translateY(-50%);
+}
+
+.docs-nav .group-header:hover p {
+  color: #61AC27;
+}
+
+.docs-nav .item {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+.docs-nav .item p {
+  display: inline-block;
+  color: #777;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 15px 0 15px 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.docs-nav .item:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background: url("https://greensock.com/wp-content/themes/greensock/images/docs/item-arrow.png") no-repeat;
+  background-size: 45px 44px;
+  width: 45px;
+  height: 44px;
+  transform: translateY(-50%);
+}
+
+.docs-nav .item .b {
+  display: inline-block;
+  float: right;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: #777;
+  font-weight: 600;
+  min-width: 20px;
+  background: #ededed;
+  border-radius: 14px;
+  padding: 4px 11px 5px;
+  margin: 10px 43px 0 0;
+  text-align: center;
+  border: 1px solid #d5d5d5;
+  box-shadow: 1px 1px 0 white;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.docs-nav .item.item-class p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 0 19px 30px;
+}
+
+.docs-nav .item.item-class:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background: #61AC27;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.docs-nav .item.item-page:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.docs-nav .item.item-page:after {
+  display: none;
+}
+
+.docs-nav .item.item-page.active p {
+  color: #61AC27;
+  font-weight: bold;
+}
+
+.docs-nav .item.item-info p {
+  font-weight: bold;
+}
+
+.docs-nav .item.item-info:after {
+  display: none;
+  padding: 0.5em;
+}
+
+.docs-nav .item.item-page p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.docs-nav .item.item-element {
+  border: none;
+  background: #636363;
+  padding: 3px 0;
+  transition: 0.3s ease-in-out;
+}
+
+.docs-nav .item.item-element p {
+  color: #e1e1e1;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 4px 0 4px 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.docs-nav .item.item-element p span {
+  color: #a4a4a4;
+}
+
+.docs-nav .item.item-element:after {
+  display: none;
+}
+
+.docs-nav .item.item-element:hover {
+  background: #3b3b3b;
+}
+
+.docs-nav .item.item-element:hover p {
+  color: #fff;
+  padding-left: 35px;
+}
+
+.docs-nav .item.item-element.active {
+  background: #88ce02 !important;
+}
+
+.docs-nav .item.item-element.active p {
+  color: #232323;
+  text-shadow: none;
+}
+
+.docs-nav .item.item-element.active p span {
+  color: #232323;
+}
+
+.docs-nav .item.item-header p {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.5em 30px;
+}
+
+.docs-nav .item.item-class:hover,
+.docs-nav .item.item-folder:hover,
+.docs-nav .item.item-page:hover {
+  background-color: #f8f8f8;
+}
+
+.docs-nav .item.item-class:hover p,
+.docs-nav .item.item-folder:hover p,
+.docs-nav .item.item-page:hover p {
+  padding-left: 35px;
+  color: #61AC27;
+}
+
+.docs-nav .item.item-class:hover:before,
+.docs-nav .item.item-folder:hover:before,
+.docs-nav .item.item-page:hover:before {
+  width: 8px;
+}
+
+.docs-nav .group {
+  overflow: hidden;
+}
+
+.docs-nav .group .group-header {
+  width: 300px;
+  border-top: 1px solid #bcbcbc;
+  position: relative;
+  background: #dedede;
+}
+
+.docs-nav .group .group-header p {
+  display: inline-block;
+  color: #777;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 13px 0 12px 25px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.docs-nav .group .group-header .minus,
+.docs-nav .group .group-header .plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  cursor: pointer;
+}
+
+.docs-nav .group .spacer {
+  height: 4px;
+  border: none;
+  background: #636363;
+}
+
+.docs-content a {
+  text-decoration: none;
+  color: #61AC27;
+  font-weight: 600;
+}
+
+.docs-content .pre-container {
+  position: relative;
+  width: 830px;
+  overflow: auto;
+  overflow-y: hidden !important;
+  margin-bottom: 16px !important;
+  margin-top: 8px !important;
+  background-color: #262626;
+  border-radius: 6px;
+  min-height: 15px;
+}
+
+.docs-content .misc-version {
+  font-size: 12px;
+  color: #777;
+}
+
+.docs-content .misc-version.misc-version-element {
+  padding-bottom: 12px;
+}
+
+.docs-download {
+  display: inline-block;
+  float: right;
+  padding: 14px 0;
+}
+
+.docs-download a {
+  font-size: 12px;
+  color: #777;
+  text-decoration: none;
+}
+
+.docs-download .icon {
+  display: inline-block;
+  width: 20px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.docs-download .label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.edit-bar {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.edit-bar button {
+  margin: 0 0 0 15px;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.3s, border-color 0.6s;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  border-radius: 3px;
+}
+
+.edit-bar button:hover {
+  color: #61AC27;
+  border-color: #61AC27;
+}
+
+.edit-bar button:first-child {
+  margin-left: 0;
+}
+
+.edit-bar select {
+  font-size: 12px;
+  outline: none;
+  color: #666;
+  border: none;
+  background: #fff;
+}
+
+.edit-bar.ontop,
+.edit-bar.edit-bar-content {
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.edit-bar.float,
+.edit-bar.edit-bar-nav-group {
+  display: inline-block;
+  background: none;
+  border: none;
+}
+
+.edit-bar .title {
+  font-size: 14px;
+  color: #666;
+  line-height: 1em;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.edit-bar .buttons {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.edit-bar .note {
+  display: block;
+  font-size: 11px;
+}
+
+.edit-bar .left {
+  float: left;
+}
+
+.edit-bar .right {
+  float: right;
+}
+
+.edit-bar-breadcrumbs {
+  padding: 14px 20px;
+  width: auto;
+}
+
+.edit-bar-main {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-bar-main > div .buttons {
+  padding-left: 0;
+}
+
+.edit-bar-main .right {
+  text-align: right;
+}
+
+.edit-bar-main .right .buttons {
+  padding-right: 0;
+}
+
+.edit-bar-content .buttons {
+  justify-content: space-between;
+}
+
+.edit-bar.edit-bar-nav {
+  padding: 10px 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: calc(100% - 12px);
+}
+
+.edit-bar.edit-bar-nav button {
+  margin: 0 5px;
+}
+
+.edit-bar.edit-bar-nav-item {
+  padding: 0 5px 10px;
+}
+
+.edit-bar.edit-bar-nav-item .buttons {
+  justify-content: flex-start;
+}
+
+.edit-bar.edit-bar-nav-item button {
+  margin: 0 5px;
+}
+
+.edit-bar.edit-bar-nav-group {
+  float: right;
+  margin-right: 45px;
+  z-index: 111;
+  width: auto;
+}
+
+.edit-bar.edit-bar-nav-group .buttons {
+  justify-content: flex-end;
+}
+
+.edit-bar.edit-bar-config-item {
+  float: right;
+  clear: both;
+  padding-left: 10px;
+  width: auto;
+}
+
+.edit-bar.edit-bar-config-item button {
+  margin: 0 5px 5px 0;
+}
+
+.edit-status .note {
+  float: left;
+  line-height: 23px;
+  white-space: nowrap;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.edit-status .edit-level-unknown .note {
+  background: orange;
+}
+
+.edit-status .edit-level-good .note {
+  background: green;
+}
+
+.edit-status .edit-level-bad .note {
+  background: red;
+}
+
+.editing .docs-nav .item.hidden p {
+  text-decoration: line-through;
+}
+
+.editing .docs-nav .item .note {
+  display: block;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.editing .docs-nav .item-element .edit-bar button {
+  background: #333;
+  border-color: #999;
+  color: #ccc;
+}
+
+.editing .docs-nav .item-element .edit-bar button:hover {
+  color: #61AC27;
+  border-color: #61AC27;
+}
+
+.editing .docs-nav .group-header .edit-bar button {
+  background: #ccc;
+  border-color: #999;
+}
+
+.editing .docs-nav .group-header .edit-bar-nav-item {
+  padding-top: 5px;
+}
+
+.reactOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.ReactModal__Body--open {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.reactModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  outline: none;
+  min-width: 30%;
+  max-width: 90%;
+  min-height: 10rem;
+  max-height: 90%;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.reactModal.wide {
+  min-width: 90%;
+}
+
+.reactModal.tall {
+  min-height: 90%;
+}
+
+.reactModal h2 {
+  margin-bottom: 1em;
+}
+
+.reactModal input,
+.reactModal textarea:not(.fr-code) {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 1px solid #000;
+  padding: 0.25em;
+  outline: none;
+  width: calc(100% - 0.5em);
+}
+
+.reactModal textarea {
+  min-height: 10vh;
+}
+
+.reactModal button {
+  font-size: 14px;
+  border-radius: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 10px 10px 10px 0;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.reactModal button.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  border: none;
+  line-height: 40px;
+}
+
+.reactModal button:hover {
+  color: #61AC27;
+}
+
+.reactModal .note {
+  font-size: 0.8em;
+}
+
+.froala-editor.docs-main-container {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+}
+
+.froala-editor.docs-main-container .docs-content {
+  width: 100%;
+  padding: 0;
+}
+
+.froala-editor.docs-main-container .docs-content .fr-wrapper {
+  background: #ededed;
+}
+
+.froala-editor.docs-main-container .fr-video {
+  position: relative;
+}
+
+.froala-editor.docs-main-container .atwho-inserted {
+  outline: 1px solid orange;
+  padding: 0 3px;
+}
+
+.froala-editor.docs-main-container button[data-cmd="<code > "],
+.froala-editor.docs-main-container button[data-cmd="@Link"],
+.froala-editor.docs-main-container button[data-cmd="Config Objects"],
+.froala-editor.docs-main-container button[data-cmd="PrettyPrint"],
+.froala-editor.docs-main-container button[data-cmd="code"] {
+  width: auto;
+  padding: 0 10px;
+}
+
+.froala-editor.docs-main-container button[data-cmd="Config Objects"] {
+  padding-right: 20px;
+}
+
+.fr-popup .fr-link-insert-layer label {
+  line-height: 0;
+}
+
+.docs-config-editor {
+  display: flex;
+}
+
+.docs-config-editor > div {
+  align-items: flex-start;
+  margin-left: 2%;
+  width: 25%;
+}
+
+.docs-config-editor > div:first-child {
+  margin-left: 0;
+}
+
+.docs-config-editor button {
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.docs-config-editor .docs-config-editor-objects .label {
+  max-width: calc(100% - 85px);
+}
+
+.docs-config-editor .docs-config-editor-elements .label {
+  max-width: calc(100% - 175px);
+}
+
+.docs-config-editor .docs-config-editor-element {
+  width: 45%;
+}
+
+.docs-config-editor .docs-config-editor-element #elementContentShort {
+  min-height: 10vh;
+}
+
+.docs-config-editor .docs-config-editor-element #elementContentFull {
+  min-height: 50vh;
+}
+
+.docs-config-editor .edit-bar-content {
+  padding-bottom: 0;
+}
+
+.docs-config-editor .edit-bar-content button {
+  margin-top: 0;
+}
+
+.docs-config-editor div.List,
+.docs-config-editor ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.docs-config-editor div.List .draggable,
+.docs-config-editor div.List li,
+.docs-config-editor ul .draggable,
+.docs-config-editor ul li {
+  display: block;
+  clear: both;
+  cursor: pointer;
+  padding: 5px 0 5px 5px;
+  font-size: 14px;
+}
+
+.docs-config-editor div.List .draggable > span,
+.docs-config-editor div.List li > span,
+.docs-config-editor ul .draggable > span,
+.docs-config-editor ul li > span {
+  display: block;
+}
+
+.docs-config-editor div.List .draggable:nth-child(odd),
+.docs-config-editor div.List li:nth-child(odd),
+.docs-config-editor ul .draggable:nth-child(odd),
+.docs-config-editor ul li:nth-child(odd) {
+  background: #eee;
+}
+
+.docs-config-editor div.List .draggable .label,
+.docs-config-editor div.List li .label,
+.docs-config-editor ul .draggable .label,
+.docs-config-editor ul li .label {
+  display: inline-block;
+  max-width: calc(100% - 85px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.docs-config-editor div.List .draggable .note,
+.docs-config-editor div.List li .note,
+.docs-config-editor ul .draggable .note,
+.docs-config-editor ul li .note {
+  clear: both;
+  font-size: 10px;
+}
+
+.docs-config-editor div.List .active,
+.docs-config-editor ul .active {
+  color: #4e9815;
+  font-weight: bold;
+}
+
+.docs-config-editor div.List .dragged,
+.docs-config-editor ul .dragged {
+  opacity: 0.7;
+}
+
+.docs-config-editor div.List .placeholder,
+.docs-config-editor ul .placeholder {
+  opacity: 0.5;
+}
+
+
+/*# sourceMappingURL=bundle.css.map*/

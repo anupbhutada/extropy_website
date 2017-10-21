@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animations</title>
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="grid/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="grid/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="grid/css/revealer.css" />
+	<link rel="stylesheet" type="text/css" href="grid/pater/pater.css" />
+	<link rel="stylesheet" href="style1.css">
+	<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+
+<header>
+	<div id = "left">
+		<div class = "button" id = "home">HOME</div>
+		<div class = "button" id = "about">ABOUT</div>
+		<div class = "button" id = "events">EVENTS</div>
+	</div>
+	<div id = "centre">EXTROPY</div>
+	<div id = "right">
+		<div class = "button" id = "reg">REGISTER</div>
+	</div>
+</header>
+
+<div class="univ-container">
+
+	<div class="float-cont">
+		<div class="shape-1"></div>
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="100vw" height="100vh" viewBox="0 0 375.418 254.496" enable-background="new 0 0 375.418 254.496"
+			 xml:space="preserve">
+		<path id="anim-path" fill="none" stroke="#000000" stroke-miterlimit="10" d="M0,168.63c6.493-7.642,10.173-19.418,14.251-28.239
+			c3.438-7.983,9.292-14.787,14.682-21.68c17.35-23.091,41.118-42.081,63.695-59.859c11.84-9.264,24.617-17.149,36.744-25.399
+			c6.339-4.313,12.589-8.161,19.403-11.184c9.305-3.508,19.471-3.973,29.15-6.93c19.084-5.726,39.57-9.986,59.415-13.407
+			c8.953-1.656,18.743-2.672,27.354-1.273c18.049,2.235,35.826,14.734,48.33,27.192c15.958,15.752,29.07,33.843,41.82,52.585
+			c10.687,15.709,23.293,38.981,20.056,58.52c-6.817,42.13-41.279,64.365-74.076,86.675c-12.954,8.813-23.979,16.313-39.193,20.615
+			c-14.751,4.392-31.642,7.415-47.078,7.837c-36.33,0.525-71.723,2.428-106.235-10.378c-22.637-8.386-46.201-16.948-66.027-31.278
+			c-12.66-9.127-25.903-21.483-36.458-32.85"/>
+		</svg>
+
+	</div>
+
+	<div class="section_2">
+	<div>
+		<p>EXTrOpy 2K!8</p>
+	</div>
+	</div>
+
+	<div class="section_1_wrap">
+	<div class="section_1 demo-3">
+		<main>
+			<div class="message">Please view this demo on a desktop to see the grid.</div>
+			<div class="grid grid--layout-1 grid--current grid-cont">
+				<div class="grid__item" data-delay="150" data-direction="ttb"></div>
+				<div class="grid__item" data-delay="300" data-direction="ttb"></div>
+				<div class="grid__item" data-delay="200" data-direction="ttb"></div>
+				<div class="grid__item" data-delay="40" data-direction="ttb"></div>
+				<div class="grid__item" data-delay="70" data-direction="ttb"></div>
+				<div class="grid__item" data-delay="100" data-direction="ttb"></div>
+				<div class="grid__item" data-delay="250" data-direction="ttb"></div>
+				<div class="grid__item" data-delay="350" data-direction="ttb"></div>
+				<div class="grid__item" data-delay="400" data-direction="ttb"></div>
+				<div class="grid__item" data-direction="ttb"></div>
+				<div class="grid__item" data-direction="ttb" data-delay="20"></div>
+				<div class="grid__item" data-direction="ttb" data-delay="500" ></div>
+				<div class="grid__item" data-delay="120" data-direction="ttb"></div>
+				<div class="grid__item grid__item--nav grid__item--nav-prev" data-direction="ttb">
+					<svg class="icon icon--nav-arrow"><use xlink:href="#icon-nav-arrow"></use></svg>
+				</div>
+				<div class="grid__item grid__item--nav grid__item--nav-next" data-direction="ttb">
+					<svg class="icon icon--nav-arrow"><use xlink:href="#icon-nav-arrow"></use></svg>
+				</div>
+				<h2 class="grid__item grid__item--name"><br/> Events <br/>2018</h2>
+				<h3 class="grid__item grid__item--title">Belfast</h3>
+				<p class="grid__item grid__item--text">A reet bobbydazzler a right toff Sherlock Queen Elizabeth Shakespeare</p>
+			</div>
+			
+		</main>
+		<script src="grid/js/imagesloaded.pkgd.min.js"></script>
+		<script src="grid/js/revealer.js"></script>
+		<script src="grid/js/demo.js"></script>
+		<script>
+		{
+			const DOM = {};
+			DOM.body = document.body;
+			DOM.gridElems = Array.from(document.querySelectorAll('.grid'));
+			
+			imagesLoaded(DOM.body, {background: true} , () => {
+				DOM.body.classList.remove('loading');
+				new Slideshow(DOM.gridElems, {
+					hasTilt: true,
+					tilt: {maxTranslationX: 25, maxTranslationY: 25}
+				});
+			});
+			header = document.getElementsByTagName('header')[0];
+			style = window.getComputedStyle(header),
+    		h_head = style.getPropertyValue('height');
+			sec2 = document.querySelectorAll('.section_2')[0];
+			style = window.getComputedStyle(sec2),
+    		h_sec = style.getPropertyValue('height');
+			sec2.style.height = String(parseInt(h_sec.substr(0,3)) - parseInt(h_head.substr(0,3))) + 'px';
+
+			document.addEventListener('load', function(){
+				console.log('hi');
+				window.Slideshow.navigate(ev, 'next');
+			});
+		}
+		</script>
+
+		<div class="ev-card" id="ev1">
+		<div>
+			<p>Event-1</p>
+		</div>
+		</div>
+		<div class="ev-card" id="ev2">
+		<div>
+			<p>Event-2</p>
+		</div>
+		</div>
+		<div class="ev-card" id="ev3">
+		<div>
+			<p>Event-3</p>
+		</div>
+		</div>
+		<div class="ev-card" id="ev4">
+		<div>
+			<p>Event-4</p>
+		</div>
+		</div>
+		<div class="ev-card" id="ev5">
+		<div>
+			<p>Event-5</p>
+		</div>
+		</div>
+		<div class="ev-card" id="ev6">
+		<div>
+			<p>Event-6</p>
+		</div>
+		</div>
+		<div class="ev-card" id="ev7">
+		<div>
+			<p>Event-7</p>
+		</div>
+		</div>
+	</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+<script src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+<script src="snap.svg-min.js"></script>
+<script src="svg2bez.js"></script>
+<script type="text/javascript">
+{
+	console.log('hi');
+	var controller = new ScrollMagic.Controller();
+
+	var shapeFloat = new ScrollMagic.Scene({
+		triggerElement: '.section_1',
+		duration: '50%'
+	})
+	.setTween(TweenMax.to('.shape-1', 1, {bezier:{type:"cubic", values:points}, ease:Power0.easeNone}))
+	.addIndicators()
+	.addTo(controller);
+
+	var pinEvents = new ScrollMagic.Scene({
+		triggerElement: '.section_1_wrap',
+		duration: '1000%',
+		triggerHook: 0
+	})
+	.setPin('.section_1_wrap')
+	.addIndicators({name: 'pinning'})
+	.addTo(controller);
+
+	var viewport_width = window.innerWidth;
+
+	var wipe = new TimelineMax()
+		.to('.section_1', 0.5, {x: -1*viewport_width})
+		.to('.section_1', 1, {z: -150})
+		.to('.section_1', 0.5, {x: -2*viewport_width})
+		.to('.section_1', 1, {z: 0})
+		.to('.section_1', 1, {z: -150, delay: 1})
+		.to('.section_1', 0.5, {x: -3*viewport_width})
+		.to('.section_1', 1, {z: 0})
+		.to('.section_1', 1, {z: -150, delay: 1})
+		.to('.section_1', 0.5, {x: -4*viewport_width})
+		.to('.section_1', 1, {z: 0})
+		.to('.section_1', 1, {z: -150, delay: 1})
+		.to('.section_1', 0.5, {x: -5*viewport_width})
+		.to('.section_1', 1, {z: 0})
+		.to('.section_1', 1, {z: -150, delay: 1})
+		.to('.section_1', 0.5, {x: -6*viewport_width})
+		.to('.section_1', 1, {z: 0})
+		.to('.section_1', 1, {z: -150, delay: 1})
+		.to('.section_1', 0.5, {x: -7*viewport_width})
+		.to('.section_1', 1, {z: 0});
+	
+	var slideEvents = new ScrollMagic.Scene({
+		triggerElement: '.section_1_wrap',
+		duration: '1000%',
+		triggerHook: 0
+	})
+	.setTween(wipe)
+	.addIndicators({name: 'slide'})
+	.addTo(controller);
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+.prettyprint {
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-size: 15px;
+  font-weight: normal;
+  border: none;
+  line-height: 18px;
+  margin: 0 !important;
+  width: auto !important;
+  background: #262626;
+  border-radius: 6px;
+  color: #ccc; }
+  .prettyprint .str {
+    color: #EC7600; }
+  .prettyprint .kwd {
+    color: #93C763; }
+  .prettyprint .com {
+    color: #999999; }
+  .prettyprint .typ {
+    color: #72a5d8; }
+  .prettyprint .lit {
+    color: #FACD22; }
+  .prettyprint .pun {
+    color: #F1F2F3; }
+  .prettyprint .pln {
+    color: #F1F2F3; }
+  .prettyprint .tag {
+    color: #8AC763; }
+  .prettyprint .atn {
+    color: #E0E2E4; }
+  .prettyprint .atv {
+    color: #EC7600; }
+  .prettyprint .dec {
+    color: purple; }
+  .prettyprint ol, .prettyprint ul {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 40px; }
+  .prettyprint ol li, .prettyprint ul li {
+    margin: 0px;
+    padding: 0px; }
+  .prettyprint ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .prettyprint li.L0, .prettyprint li.L1, .prettyprint li.L2, .prettyprint li.L3, .prettyprint li.L4, .prettyprint li.L5, .prettyprint li.L6, .prettyprint li.L7, .prettyprint li.L8, .prettyprint li.L9 {
+    color: #777;
+    list-style-type: decimal;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -40px; }
+  .prettyprint li.L1, .prettyprint li.L3, .prettyprint li.L5, .prettyprint li.L7, .prettyprint li.L9 {
+    background: #2a2a2a; }
+  @media print {
+    .prettyprint .str {
+      color: #060; }
+    .prettyprint .kwd {
+      color: #006;
+      font-weight: bold; }
+    .prettyprint .com {
+      color: #600;
+      font-style: italic; }
+    .prettyprint .typ {
+      color: #404;
+      font-weight: bold; }
+    .prettyprint .lit {
+      color: #044; }
+    .prettyprint .pun {
+      color: #440; }
+    .prettyprint .pln {
+      color: #000; }
+    .prettyprint .tag {
+      color: #006;
+      font-weight: bold; }
+    .prettyprint .atn {
+      color: #404; }
+    .prettyprint .atv {
+      color: #060; } }
+
+.prettyprint.wrap {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word; }
+
+.prettyprint {
+  padding: 12px 18px;
+  min-width: 780px;
+  margin: 0; }
+
+li .prettyprint {
+  min-width: 740px; }
+
+.prettyprint.linenums {
+  padding: 12px 0px;
+  margin: 0 0 0 25px; }
+
+.post_wrap .prettyprint {
+  /* forums */
+  margin: 10px 0 !important; }
