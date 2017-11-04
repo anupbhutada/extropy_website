@@ -226,7 +226,54 @@
 		</div>
 	</div>
 	</div>
+
+	<div class="section_3">
+		<div class="card-wrap">
+		<div id="#card-1" class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+		      <img class="activator" src="index.jpeg">
+		    </div>
+		    <div class="card-content">
+		      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+		      <p><a href="#">This is a link</a></p>
+		    </div>
+		    <div class="card-reveal">
+		      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+		      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+		    </div>
+		</div>
+		<div id="#card-2" class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+		      <img class="activator" src="index.jpeg">
+		    </div>
+		    <div class="card-content">
+		      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+		      <p><a href="#">This is a link</a></p>
+		    </div>
+		    <div class="card-reveal">
+		      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+		      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+		    </div>
+		</div>
+		<div id="#card-3" class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+		      <img class="activator" src="index.jpeg">
+		    </div>
+		    <div class="card-content">
+		      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+		      <p><a href="#">This is a link</a></p>
+		    </div>
+		    <div class="card-reveal">
+		      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+		      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+		    </div>
+		</div>
+
+		</div>
+	</div>
 </div>
+<script src="js/js/lib/jquery.min.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
 <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
@@ -239,13 +286,66 @@
 	var controller = new ScrollMagic.Controller();
 	var hor_cont = new ScrollMagic.Controller({vertical: false});
 
-	var shapeFloat = new ScrollMagic.Scene({
-		triggerElement: '#ev1',
-		duration: '850%'
+	var viewport_width = window.innerWidth;
+	var points_len = points.length
+	/*var blobFloat = new TimelineMax()
+		.to('.shape-1', 1, {bezier:{type:"cubic", values:points.slice(0,(points_len/7))}, ease:Power0.easeNone})
+		.to('.shape-1', 1, {bezier:{type:"cubic", values:points.slice((points_len/7),(points_len*2/7))}, ease:Power0.easeNone, delay:2})
+		.to('.shape-1', 1, {bezier:{type:"cubic", values:points.slice((points_len*2/7),(points_len*3/7))}, ease:Power0.easeNone, delay:2})
+		.to('.shape-1', 1, {bezier:{type:"cubic", values:points.slice((points_len*3/7),(points_len*4/7))}, ease:Power0.easeNone, delay:2})
+		.to('.shape-1', 1, {bezier:{type:"cubic", values:points.slice((points_len*4/7),(points_len*5/7))}, ease:Power0.easeNone, delay:2})
+		.to('.shape-1', 1, {bezier:{type:"cubic", values:points.slice((points_len*5/7),(points_len*6/7))}, ease:Power0.easeNone, delay:2})
+		.to('.shape-1', 1, {bezier:{type:"cubic", values:points.slice((points_len*6/7),(points_len*7/7))}, ease:Power0.easeNone, delay:2})
+	*/
+	var ev1Scene = new ScrollMagic.Scene({
+		triggerElement: '#ev1'
 	})
-	.setTween(TweenMax.to('.shape-1', 1, {bezier:{type:"cubic", values:points}, ease:Power0.easeNone}))
+	.setTween(TweenMax.to('.shape-1', 0.5, {bezier:{type:"cubic", values:points.slice(0,Math.floor(points_len/7))}, ease:Power4.easeInOut}))
 	.addIndicators()
 	.addTo(hor_cont);
+
+	var ev2Scene = new ScrollMagic.Scene({
+		triggerElement: '#ev2'
+	})
+	.setTween(TweenMax.to('.shape-1', 0.5, {bezier:{type:"cubic", values:points.slice(Math.floor(points_len/7),Math.floor(points_len*2/7))}, ease:Power4.easeInOut}))
+	.addIndicators()
+	.addTo(hor_cont);
+
+	var ev3Scene = new ScrollMagic.Scene({
+		triggerElement: '#ev3'
+	})
+	.setTween(TweenMax.to('.shape-1', 0.5, {bezier:{type:"cubic", values:points.slice(Math.floor(points_len*2/7),Math.floor(points_len*3/7))}, ease:Power4.easeInOut}))
+	.addIndicators()
+	.addTo(hor_cont);
+
+	var ev4Scene = new ScrollMagic.Scene({
+		triggerElement: '#ev4'
+	})
+	.setTween(TweenMax.to('.shape-1', 0.5, {bezier:{type:"cubic", values:points.slice(Math.floor(points_len*3/7),Math.floor(points_len*4/7))}, ease:Power4.easeInOut}))
+	.addIndicators()
+	.addTo(hor_cont);
+
+	var ev5Scene = new ScrollMagic.Scene({
+		triggerElement: '#ev5'
+	})
+	.setTween(TweenMax.to('.shape-1', 0.5, {bezier:{type:"cubic", values:points.slice(Math.floor(points_len*4/7),Math.floor(points_len*5/7))}, ease:Power4.easeInOut}))
+	.addIndicators()
+	.addTo(hor_cont);
+
+	var ev6Scene = new ScrollMagic.Scene({
+		triggerElement: '#ev6'
+	})
+	.setTween(TweenMax.to('.shape-1', 0.5, {bezier:{type:"cubic", values:points.slice(Math.floor(points_len*5/7),Math.floor(points_len*6/7))}, ease:Power4.easeInOut}))
+	.addIndicators()
+	.addTo(hor_cont);
+
+	var ev7Scene = new ScrollMagic.Scene({
+		triggerElement: '#ev7'
+	})
+	.setTween(TweenMax.to('.shape-1', 0.5, {bezier:{type:"cubic", values:points.slice(Math.floor(points_len*6/7),Math.floor(points_len*7/7))}, ease:Power4.easeInOut}))
+	.addIndicators()
+	.addTo(hor_cont);
+
 
 	var pinEvents = new ScrollMagic.Scene({
 		triggerElement: '.section_1_wrap',
@@ -287,7 +387,6 @@
 	.setTween(wipe)
 	.addIndicators({name: 'slide'})
 	.addTo(controller);
-
 }
 
 </script>
