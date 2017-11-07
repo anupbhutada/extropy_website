@@ -9,6 +9,11 @@ margin: 0;
 padding: 0;
 height: 900vh;
 }
+.landing-page{
+    background: url('landing.svg');
+    background-size: cover;
+    background-position: center;
+}
 header{
 display: flex;
 justify-content: space-between;
@@ -16,7 +21,6 @@ position:relative;
 top: 0px;
 margin: 0px;
 padding: 0px;
-background: #F79F79;
 z-index: 3;
 }
 header div{
@@ -56,7 +60,6 @@ width: 450px;
 display: flex;
 height: 100vh;
 justify-content: center;
-background: #DEF2F1;
 margin:0;
 padding:0;
 }
