@@ -9,11 +9,13 @@ margin: 0;
 padding: 0;
 height: 900vh;
 }
+/*
 .landing-page{
     background: url('landing.svg');
     background-size: cover;
     background-position: center;
 }
+*/
 header{
 display: flex;
 justify-content: space-between;
@@ -64,8 +66,22 @@ margin:0;
 padding:0;
 }
 .section_2 div{
-display:flex;
+display: flex;
+position: absolute;
+top: 0px;
+height: 100vh;
+overflow: hidden;
 }
+
+.section_2 div #bground{
+align-self: center;
+display: inline-block;
+position: relative;
+top: 0px;
+height: 100vh;
+width: auto;
+}
+
 .section_2 p{
 font-size: 10em;
 padding:0;
