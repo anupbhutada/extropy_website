@@ -4,7 +4,7 @@ padding:0;
 overflow-x: hidden;
 }
 body{
-background: black;
+background: white;
 margin: 0;
 padding: 0;
 height: 900vh;
@@ -22,7 +22,9 @@ justify-content: space-between;
 position:relative;
 top: 0px;
 margin: 0px;
-padding: 0px;
+width:80%;
+padding: 5%;
+padding-left: 24%;
 z-index: 3;
 }
 header div{
@@ -51,10 +53,11 @@ font-size: 1.5em;
 display:flex;
 justify-content: flex-start;
 width: 450px;
+border-color:red;
 }
 #right{
 display:flex;
-justify-content: flex-end;
+justify-content: flex-start;
 width: 450px;
 }
 
@@ -88,7 +91,20 @@ padding:0;
 margin:0;
 align-self: center;
 }
-
+.about-extropy h3{
+position:absolute;
+top:105%;
+color:tomato; 
+right:26%;
+}
+.about-extropy p{
+position:relative;
+margin-top:-6%;
+padding-bottom:5%;
+width:60%;
+left:20%;
+font-size:30px;
+}
 .section_1{
 display: flex;
 width: 800vw;
@@ -117,7 +133,8 @@ border-left: 10px dashed black;
 z-index: 0;
 opacity: 0.8;
 position: absolute;
-background-color: #888;
+background: url('backdrop.svg');
+background-size: cover;
 width: 75%;
 height: 80%;
 }
@@ -181,7 +198,7 @@ display:none;
     height: 15%;
     position:relative;
     top:-33%;
-    left:30%;
+    left:20%;
     border-bottom-color:whitesmoke;
     border-bottom-style:groove;
 }
@@ -200,11 +217,13 @@ display:none;
     background-color:transparent;
     height:50%;
     width:40%;
-    left:-8%;
+    left:-15%;
     top:1%;
 }
 .ev_card_about p{
     font-size:15px;
+    color:black;
+
 }
 .ev_card_img{
     position: relative;
