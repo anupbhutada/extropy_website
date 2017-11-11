@@ -1,7 +1,7 @@
 var $layer_0 = $('#back-2'),
     $layer_1 = $('#circle'),
     $layer_2 = $('#back-1'),
-    $layer_3 = $('#text')
+    $layer_3 = $('#text'),
     $container = $('.landing-page'),
     container_w = $container.width(),
     container_h = $container.height();

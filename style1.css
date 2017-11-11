@@ -96,6 +96,7 @@ position:absolute;
 top:105%;
 color:tomato; 
 right:26%;
+    z-index: 101;
 }
 .about-extropy p{
 position:relative;
@@ -103,6 +104,7 @@ margin-top:-6%;
 padding-bottom:5%;
 width:60%;
 left:20%;
+    z-index: 4;
 font-size:30px;
 }
 .section_1{
@@ -113,7 +115,16 @@ width: 800vw;
 width: 100vw;
 height: 100vh;
 }
-
+#about-layer-svg{
+    z-index:-10;
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+    top:0;
+}
+#circle{
+    z-index: 2;
+}
 .section_1 .ev-card{
 position: relative;
 width: 100vw;
