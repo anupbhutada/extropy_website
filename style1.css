@@ -123,9 +123,11 @@ height: 100vh;
     top: 0;
 }
 #events-bckdrp{
-    position:absolute;
-    overflow-y:hidden;
-    top:-450px;
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    overflow-y: hidden;
+ 
 }
 #circle{
     z-index: 2;
@@ -162,7 +164,7 @@ margin:0;
 align-self: center;
 }
 .section_1_wrap{
-overflow-x: hidden;
+overflow: hidden;
 -webkit-perspective: 1000;
             perspective: 1000;
 }
