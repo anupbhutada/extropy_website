@@ -12,7 +12,7 @@
 	// from http://www.quirksmode.org/js/events_properties.html#position
 	grid_div = document.getElementsByClassName('section_1')[0];
 	const getMousePos = (e) => {
-		y_div = grid_div.offsetHeight;
+		y_div = 2*window.innerHeight;
 		let posx = 0;
 		let posy = 0;
 		if (!e) {let e = window.event};
