@@ -10,13 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="grid/css/revealer.css" />
 	<link rel="stylesheet" type="text/css" href="grid/pater/pater.css" />
 	<link rel="stylesheet" href="style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>document.documentElement.className = 'js';</script>
 </head>
 <body>
 
-
 <header>
 	<div id = "left">
+        <div class = "button" id = "close" >&times;</div>
 		<div class = "button" id = "home" onclick="scrollFunctionhome(this);">HOME</div>
 		<div class = "button" id = "about" onclick="scrollFunctionabout(this);">ABOUT</div>
 	</div>
@@ -24,8 +25,10 @@
 	<div id = "right">
 		<div class = "button" id = "events" onclick="scrollFunctionevents(this);">EVENTS</div>
 		<div class = "button" id = "reg">REGISTER</div>
+		<div class = "button" id = "menu-button">Menu</div>
 	</div>
 </header>
+
 <div class="univ-container" id = "univ-container">
 
 	<div class="float-cont">
@@ -2046,10 +2049,8 @@
 {
 	var viewport_width = window.innerWidth;
 	$land_svg = $("#bground");
-	$events_svg = $("#events-bckdrp")
 	fitLand_svg = function() {
 		viewport_width = window.innerWidth;
-		viewport_height = window.innerHeight;
 		if($land_svg.width() < viewport_width){
 		h = $land_svg.height();
 		console.log(h)
@@ -2058,19 +2059,9 @@
 		$land_svg.css('width', String(viewport_width)+'px');
 		$land_svg.css('height', String(nh)+'px');
 		$(".section_2").css('height', '100vh');
-		}
-		if($events_svg.width() < 8*viewport_width){
-		h1 = $events_svg.height();
-		w1 = $events_svg.width();
-		nh1 = 8*viewport_width*h1/w1;
-		$events_svg.css('width', String(8*viewport_width)+'px');
-		$events_svg.css('height', String(nh1)+'px');
-		trans = nh1 - viewport_height;
-		$events_svg.css('transform', 'translateY(' + String(-trans / 2) + 'px)');
-		}
-
 	}
 
+	}
 	fitLand_svg();
 	$(window).on('resize', function() {
 	  fitLand_svg();
@@ -2180,25 +2171,6 @@
 	})
 	.setTween(wipe)
 	.addIndicators({name: 'slide'})
-	.addTo(controller);
-
-	var wipe_1 = new TimelineMax()
-		.to('#events-bckdrp', 0.5, {x: -1*0.2*viewport_width, delay:1})
-		.to('#events-bckdrp', 0.5, {x: -2*0.2*viewport_width, delay:1})
-		.to('#events-bckdrp', 0.5, {x: -3*0.2*viewport_width, delay:3})
-		.to('#events-bckdrp', 0.5, {x: -4*0.2*viewport_width, delay:3})
-		.to('#events-bckdrp', 0.5, {x: -5*0.2*viewport_width, delay:3})
-		.to('#events-bckdrp', 0.5, {x: -6*0.2*viewport_width, delay:3})
-		.to('#events-bckdrp', 0.5, {x: -7*0.2*viewport_width, delay:3})
-		.to('#events-bckdrp', 1, {x: -7*0.2*viewport_width})
-
-	var slideSVGs = new ScrollMagic.Scene({
-		triggerElement: '.section_1_wrap',
-		duration: '1100%',
-		triggerHook: 0
-	})
-	.setTween(wipe_1)
-	.addIndicators({name: 'slide_1'})
 	.addTo(controller);
 }
 

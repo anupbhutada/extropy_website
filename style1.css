@@ -23,9 +23,8 @@ position:relative;
 top: 0px;
 margin: 0px;
 width:80%;
-padding: 5%;
-padding-left: 24%;
-z-index: 3;
+    padding: 5% 5% 5% 24%;
+    z-index: 3;
 }
 header div{
 display: flex;
@@ -48,17 +47,34 @@ border: 2px solid black;
 
 #centre{
 font-size: 1.5em;
+    position: fixed;
+    left:40%;
 }
 #left{
-display:flex;
-justify-content: flex-start;
+    left:10%;
 width: 450px;
 border-color:red;
+    position: fixed;
+}
+.menu-modal{
+    width:20%;
+    height: 100vh;
+    background-color: black;
+    z-index: 1000000;
+    display: none;
+}
+#close{
+    display: none;
 }
 #right{
-display:flex;
-justify-content: flex-start;
+    left:70%;
 width: 450px;
+    position: fixed;
+}
+#menu-button{
+    display: none;
+    position: fixed;
+    left:90%;
 }
 
 .section_2{
@@ -93,9 +109,9 @@ align-self: center;
 }
 .about-extropy h3{
 position:absolute;
-top:105%;
+top:130%;
 color:tomato; 
-right:26%;
+right:5%;
     z-index: 101;
 }
 .about-extropy p{
@@ -122,12 +138,11 @@ height: 100vh;
     position: absolute;
     top: 0;
 }
+
 #events-bckdrp{
-    height: 100vh;
-    width: auto;
-    position: absolute;
-    overflow-y: hidden;
- 
+    position:absolute;
+    overflow-y:hidden;
+    top:-450px;
 }
 #circle{
     z-index: 2;
@@ -164,7 +179,7 @@ margin:0;
 align-self: center;
 }
 .section_1_wrap{
-overflow: hidden;
+overflow-x: hidden;
 -webkit-perspective: 1000;
             perspective: 1000;
 }
